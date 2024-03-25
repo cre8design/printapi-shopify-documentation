@@ -22,7 +22,7 @@ attributes for **Products**, **Variants** or both. Should the products that you
 want us to print be configurable, meaning they contain options on your side, you 
 will need to create the attributes for the **Variant** section. Should the 
 products not have variants you will need to create the attributes for the 
-**Product**section. Should you have both, simple products and configurable 
+**Product** section. Should you have both, simple products and configurable 
 products, you will need to create the attributes in both sections.
 
 #### 2.1 Material
@@ -30,14 +30,25 @@ products, you will need to create the attributes in both sections.
 This attribute provides us with the information about the material we should use.
 
 1. Add a new definition
-2. name it **Material**
+2. Name it **Material**
 3. Give it the namespace and key **print_api.material**
 4. Select the type **Single line text**
 5. Check the box **Limit to preset choices**
 6. Add the following choices:
-   - Plexiglas
+   - Plexiglas UV Glossy
+   - Plexiglas UV Matte
+   - Glass 4mm
    - Dibond
    - RVS
+   - Fine Art Plexiglas Glossy
+   - Fine Art Plexiglas Matte
+   - Fine Art Plexiglas True Life
+   - Wood
+   - Fine Art Aluminium
+   - Poster
+   - Canvas 2cm
+   - Canvas 4cm
+   - Forex 5mm
 7. Save
 
 ![Material](/images/attr_material.png)
@@ -47,7 +58,7 @@ This attribute provides us with the information about the material we should use
 This attribute provides us with the information about the width of the print.
 
 1. Add a new definition
-2. name it **Format Width**
+2. Name it **Format Width**
 3. Give it the namespace and key **print_api.format_width**
 4. Select the type **Dimension**
 5. Add **20 cm** as the **minimum dimension**
@@ -61,7 +72,7 @@ This attribute provides us with the information about the width of the print.
 This attribute provides us with the information about the height of the print.
 
 1. Add a new definition
-2. name it **Format Height**
+2. Name it **Format Height**
 3. Give it the namespace and key **print_api.format_height**
 4. Select the type **Dimension**
 5. Add **20 cm** as the **minimum dimension**
@@ -75,14 +86,14 @@ This attribute provides us with the information about the height of the print.
 This attribute provides us with the information about the frame we should use.
 
 1. Add a new definition
-2. name it **Frame**
+2. Name it **Frame**
 3. Give it the namespace and key **print_api.frame**
 4. Select the type **Single line text**
 5. Check the box **Limit to preset choices**
 6. Add the following choices:
    - None
-   - Panel Frame Black
-   - Panel Frame Blank
+   - Frame Black
+   - Frame Blank
 7. Save
 
 ![Frame](/images/attr_frame.png)
@@ -143,19 +154,16 @@ the necessary URL follow these steps:
    2. Set **General Access** to **Anyone with the link**
       ![Google Drive](/images/google_drive.png)
    3. Click on **Done**
-3. Click on **Share** again on **Copy Link**
+3. Click on **Share** and on **Copy Link** to receive the URL
 
 ## 5. Tagging Orders
 
-We periodically check for new orders we filter them by the tag **Print**. 
-This tag is used to identify Orders suitable for our PrintApi. You can set this
-tag manually from your Shopify admin panel or use an App like **AOD Auto Tag 
-Customer & Order** to automate the process of tagging orders.
+We periodically check for new orders. Orders for us are identified by the tag 
+**Print**.  You can set this tag manually from your Shopify admin panel or use 
+an App like **AOD Auto Tag Customer & Order** to automate the process of tagging 
+orders.
 
 ## 6. Providing access to your Shopify Store
-
-We require an API key to access your Shopify Store. You can create a new API key
-by following these steps:
 
 1. Navigate to **Shopify Admin Panel / Settings / Apps and sales channel / View custom apps**
 2. Click on **Create an app**
