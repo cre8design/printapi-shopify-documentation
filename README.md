@@ -111,6 +111,7 @@ This attribute provides us with the information about the mounting system we sho
    - None
    - Blind Kunststoff
    - Aluminium Profile
+   - Flat on the Wall
 7. Save
 
 ![Mounting System](/images/attr_mounting.png)
