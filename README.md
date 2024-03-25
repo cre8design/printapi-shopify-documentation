@@ -130,10 +130,16 @@ This attribute provides us with the information about the print file we should u
 
 ## 3. Populating Product Data
 
-It is crucial that all products and variants that you want us to print have the
-custom data attributes populated. You can do this manually from your Shopify
+It is crucial that:
+
+a) all products and variants that you want us to print have 
+the custom data attributes populated. You can do this manually from your Shopify
 admin panel or use an App like **DataChamp Excel & CSV Exports** to populate 
 your products and variants in bulk.
+
+b) The combination of attributes corresponds to a variation that we sell. You 
+can reference our shop https://printingambitions.com/store to see which 
+variations we offer. For a quick overview you can use the ***pricelist*** tab.
 
 ## 4. Providing Print Files
 
