@@ -25,7 +25,19 @@ products not have variants you will need to create the attributes for the
 **Product** section. Should you have both, simple products and configurable 
 products, you will need to create the attributes in both sections.
 
-#### 2.1 Material
+#### 2.1 Enabled Flag
+
+This attribute provides us with the information wheter the variant / product is
+a printable product and should be pulled into our order process.
+
+1. Add a new definition
+2. Name it **Enable Print API**
+3. Give it the namespace and key **print_api.enable**
+4. Select the type **True or false**
+
+![Enable](/images/attr_enable.png)
+
+#### 2.2 Material
 
 This attribute provides us with the information about the material we should use.
 
@@ -53,7 +65,7 @@ This attribute provides us with the information about the material we should use
 
 ![Material](/images/attr_material.png)
 
-#### 2.2 Format Width
+#### 2.3 Format Width
 
 This attribute provides us with the information about the width of the print.
 
@@ -67,7 +79,7 @@ This attribute provides us with the information about the width of the print.
 
 ![Format Width](/images/attr_format_width.png)
 
-#### 2.3 Format Height
+#### 2.4 Format Height
 
 This attribute provides us with the information about the height of the print.
 
@@ -81,7 +93,25 @@ This attribute provides us with the information about the height of the print.
 
 ![Format Width](/images/attr_format_width.png)
 
-#### 2.4 Frame
+#### 2.5 Shape
+
+This attribute provides us with information whether your file will be routed.
+
+1. Add a new definition
+2. Name it **Shape**
+3. Give it the namespace and key **print_api.shape**
+4. Select the type **Single line text**
+5. Check the box **Limit to preset choices**
+6. Add the following choices:
+   - Rectangle
+   - Circle
+   - Rounded
+	- Custom
+7. Save
+
+![Frame](/images/attr_shape.png)
+
+#### 2.6 Frame
 
 This attribute provides us with the information about the frame we should use.
 
@@ -98,7 +128,7 @@ This attribute provides us with the information about the frame we should use.
 
 ![Frame](/images/attr_frame.png)
 
-#### 2.6 Mounting System
+#### 2.7 Mounting System
 
 This attribute provides us with the information about the mounting system we should use.
 
@@ -116,7 +146,7 @@ This attribute provides us with the information about the mounting system we sho
 
 ![Mounting System](/images/attr_mounting.png)
 
-#### 2.7 Print File URL
+#### 2.8 Print File URL
 
 This attribute provides us with the information about the print file we should use.
 
